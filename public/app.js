@@ -20,9 +20,9 @@
   let categoryChart = null;
 
   function formatMoney(n) {
-    return new Intl.NumberFormat(undefined, {
+    return new Intl.NumberFormat("en-IN", {
       style: "currency",
-      currency: "USD",
+      currency: "INR",
       maximumFractionDigits: 2,
     }).format(n);
   }
@@ -166,7 +166,7 @@
         labels,
         datasets: [
           {
-            label: "Total amount",
+            label: "Total (INR)",
             data,
             backgroundColor: colors,
             borderRadius: 6,
@@ -193,7 +193,7 @@
             beginAtZero: true,
             ticks: {
               color: getChartTickColor(),
-              callback: (v) => "$" + v,
+              callback: (v) => formatMoney(Number(v)),
             },
             grid: { color: getChartGridColor() },
           },

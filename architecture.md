@@ -112,7 +112,7 @@ Each row is one expense. Column order is fixed for interoperability and simple p
 | Column | Type / constraint | Notes |
 |--------|-------------------|--------|
 | `Item` | Non-empty string | User description (3). |
-| `Amount` | Numeric | Stored in a consistent decimal representation (4.1). |
+| `Amount` | Numeric | Stored as a plain decimal number in CSV (4.1); the presentation layer formats values as **INR** (Indian Rupees). |
 | `Category` | Enum of allowed values | Extendable list (3, 5.3). |
 | `Date` | ISO 8601 date (recommended) or locale-consistent format | Must round-trip as “valid date” in UI (4.1). |
 

@@ -16,7 +16,7 @@ and store expense records in a structured format.
 The application should allow users to enter the following details:
 
 1.  **Item** - Name/description of the expense\
-2.  **Amount** - Monetary value of the expense\
+2.  **Amount** - Monetary value of the expense in **Indian Rupees (INR)**; the UI formats amounts as INR while CSV stores a plain numeric value\
 3.  **Category** - Predefined categories such as:
     -   Shopping
     -   Travel

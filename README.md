@@ -1,6 +1,6 @@
 # Expense listing (stateful)
 
-Web app for capturing expenses with CSV persistence, async save feedback, and a category totals chart. Stack: **Node.js**, **Express**, plain **HTML/CSS/JS**, **Chart.js** (CDN) for graphs.
+Web app for capturing expenses with CSV persistence, async save feedback, and a category totals chart. Stack: **Node.js**, **Express**, plain **HTML/CSS/JS**, **Chart.js** (CDN) for graphs. **Amounts** in the UI and chart are shown in **Indian Rupees (INR)**; stored values remain plain numbers in CSV.
 
 ## Prerequisites
 
